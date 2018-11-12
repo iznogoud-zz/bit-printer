@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'gcc -o bit-printer main.c'
+        sh '''cmake
+gcc -o bit-printer main.c'''
       }
     }
     stage('Run') {
