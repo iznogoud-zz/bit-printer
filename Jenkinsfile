@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''cmake
 gcc -o bit-printer main.c'''
-        cmakeBuild 'bit-print'
+        cmakeBuild 'bit-printer'
       }
     }
     stage('Run') {
