@@ -14,7 +14,7 @@ int main(int argc, char **argv)
     char _output[33];
     _output[32] = '\0';
 
-    
+    printf("%d in binary is: ", _value);
     for(int i = 0; i < 32; i++)
     {
         if(_value % 2 == 0)
@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 
         _value = _value >> 1;
     }
-    printf("%d in binary is: %s\n", _value, _output);
+    printf("%s\n", _output);
 
     return 0;
 }
