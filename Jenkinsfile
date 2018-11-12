@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'gcc'
+      image 'rikorose/gcc-cmake'
     }
 
   }
